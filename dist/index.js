@@ -1,7 +1,6 @@
 define("@scom/scom-binance-chain-wallet", ["require", "exports", "@ijstech/eth-wallet", "@ijstech/components"], function (require, exports, eth_wallet_1, components_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    exports.BinanceChainWalletProvider = void 0;
     let moduleDir = components_1.application.currentModuleDir;
     function fullPath(path) {
         if (path.indexOf('://') > 0)
@@ -25,5 +24,5 @@ define("@scom/scom-binance-chain-wallet", ["require", "exports", "@ijstech/eth-w
             return !!window['BinanceChain'];
         }
     }
-    exports.BinanceChainWalletProvider = BinanceChainWalletProvider;
+    exports.default = BinanceChainWalletProvider;
 });
